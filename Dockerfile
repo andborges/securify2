@@ -16,7 +16,7 @@ ENV LC_ALL en_US.UTF-8
 RUN apt-get update &&\
         apt-get -y install\
         wget\
-        gdebi
+        gdebi-core
 
 # install souffle
 RUN wget https://github.com/souffle-lang/souffle/releases/download/1.6.2/souffle_1.6.2-1_amd64.deb -O /tmp/souffle.deb &&\
